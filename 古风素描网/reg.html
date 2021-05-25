@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="zh-cn" />
+<title>版权所有</title>
+<meta name="Description" content="摆脱frameset的束缚，以div代替，通过css实现仿框架布局" />
+<meta name="Keywords" content="div布局, div仿框架布局, 两栏布局" />
+<meta name="author" content="Doyoe(飘零雾雨), dooyoe@gmail.com" />
+<link rel="stylesheet" type="text/css" href="css\layout.css" />
+</head>
+<body>
+	<div id="hd">
+        <h1 class="tit-layout">古风素描网</h1>
+		<hr style="height:1px;border:none;border-top:1px solid #555555;" />
+		<div id="nav"> 
+			<a href="index.html">首页</a> 
+			<a href="pencil.html">铅笔素描</a> 
+			<a href="char.html">炭笔素描</a> 
+			<a href="pen.html">钢笔素描</a> 
+			<a href="fpen.html">水笔素描</a> 
+			<a href="inw.html">水墨素描</a> 
+			<a href="chalk.html">粉笔素描</a> 
+			<a href="papen.html">纸笔素描</a>
+			<a href="about.html">关于素描</a>
+			<span>&nbsp;</span> 
+		</div>
+    </div>
+    <div id="bd">
+        <div id="side">
+			<ul class="na">
+				<li><a href="stli.html">静物</a></li> 
+				<li><a href="#">动物</a></li> 
+				<li><a href="#">风景</a></li> 
+				<li><a href="#">人像</a></li> 
+				<li><a href="#">人体</a></li>
+			</ul>
+		</div>
+        <div id="main">
+            <div id="content">
+                <div id="feature" class="feature">
+				<div class="reg">
+				                        <h3>温馨提示：</h3>
+                        <ol>
+                            <li>新注册的手机或者邮箱用户账号，可以有一次修改用户名的机会。</li>
+                            <li>用户名一旦设置就不能再次修改了。</li>
+                            <li>注册的用户名只能为数字、英文字母(不区分大小写)、“-”、“_”, 其他特殊字符不可以使用。</li>
+                            <li>您可以把您新注册的的邮箱或者手机账号修改成您喜欢的账号名</li>
+                            <li>注册的用户名可以不是真实姓名。</li>
+							<li>一个手机号只能注册一个会员。</li>
+							<li>建议您不要使用自己的生日、手机号码、姓名以及连续的数字作为密码，以防被盗取。</li>
+							<li>请妥善保管您的密码，请勿将账号密码转借他人使用。</li>
+                        </ol>
+                    </div>
+					<div class="reg">
+						<table width=699 align=left cellpadding=4 cellspacing=1 class=table>
+                  <tr>
+                    <td width="687" height="25" align="center" valign="bottom" class="hong cu"><strong>会员注册</strong></td>
+                  </tr>
+                  <tr>
+                    <td height=72 align=center valign="top" class=con><table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#FFFFFF" id="Table14">
+                        <form action="register.asp" method="post" name="regform" id="regform" onsubmit="return checkreg(this)" style="margin:0px;">
+                          <tr>
+                            <td colspan="2" height="25" class="font2 cu">&nbsp;&nbsp;会员登录帐号</td>
+                          </tr>
+                          <tr>
+                            <td height="25" align="right">用户名：</td>
+                            <td width="87%" align="left" class="hui"><input name="txtName2" type="text" id="txtName3" class="<%=txtstyle%>" size="15" maxlength="40" />
+                                <font color="#FF0000"> * [英文或数字]</font></td>
+                          </tr>
+                          <tr>
+                            <td height="25" align="right">密&nbsp;码： </td>
+                            <td><input name="txtPassWord1" type="password" id="txtPassWord1" class="<%=txtstyle%>" size="20" />
+                                <font color="#FF0000"> * [英文或数字]</font></td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">确认密码： </td>
+                            <td><input name="txtPassWord2" type="password" id="txtPassWord2" class="<%=txtstyle%>" size="20" />
+                                <font color="#FF0000"> * [英文或数字]</font></td>
+                          </tr>
+                          <tr>
+                            <td colspan="2" height="25" class="font2 cu">&nbsp;&nbsp;联系信息</td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">姓　　名： </td>
+                            <td><input name="txtRealName" type="text" class="<%=txtstyle%>" id="txtRealName" size="15" />
+                                <font color="#FF0000"> * </font></td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">性　　别：</td>
+                            <td><input type="radio" value="先生" name="rdoSex" checked />
+                              先生　
+                              <input type="radio" value="女士" name="rdoSex" />
+                              女士</td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">详细地址：</td>
+                            <td><input name="txtAddress" type="text" id="txtAddress" size="40" maxlength="100" class="<%=txtstyle%>" /></td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">电话号码：</td>
+                            <td><input name="txtTel" type="text" class="<%=txtstyle%>" id="txtTel" size="20" maxlength="100" />
+                                <font color="#FF0000"> * </font></td>
+                          </tr>
+                          <tr>
+                            <td align="right" height="25">电子邮箱： </td>
+                            <td><input name="txtEmail" type="text" class="<%=txtstyle%>"  id="txtEmail" size="40" /></td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <td height="40"><input type="image" name="imageField2" src="images/zc1.gif" /></td>
+                          </tr>
+                        </form>
+                    </table></td>
+                  </tr>
+                </table>
+				</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ft">
+        <address class="copyright">
+            Copyright &copy; <a href="index2.html">返回主页</a>
+        </address>
+    </div>
+</body>
+</html>
