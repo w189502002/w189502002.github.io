@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>盼达旅游网登录</title>
+<link href="Untitled-2.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+ <div class="container"><!--container -->
+  <div class="bg"><!-- bg	 -->
+     <img src="imgs/loginRegister/login_bg.jpg"/>
+  </div>
+  
+  <div class="box"> <!--box -->
+  <div class="form"> <!-- form -->
+  <h2 class="title">账号登陆</h2><!-- title -->
+  <form action="">
+   <ul class="pform">
+      <li>
+       <input type="text"  name="username" class="ipt" placeholder="请输入用户名"/>
+      </li>
+         <li>
+       <input type="password"  name="password" class="ipt" placeholder="请输入密码"/>
+      </li>
+      <input  type="submit" value="登录" class=" sub"		/>
+   </ul>
+  
+  </form>
+  
+  <a class="reg">免费注册	</a>
+  </div>
+  </div>
+  
+ </div>
+
+
+
+
+
+</body>
+</html>
